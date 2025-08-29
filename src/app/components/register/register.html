@@ -1,5 +1,29 @@
 <div id="body">
-  <div id="form">
-
+  <div class="h-[650px] w-[345px] sm:h-[765px] sm:w-[500px]" id="form">
+    <h1>Register</h1>
+    <div class="relative flex flex-col justify-center items-center gap-3">
+      <label for="user">User
+        <input id="user" type="text" placeholder="Enter your name user">
+      </label>
+      <label for="email">Email
+        <input id="email" type="email" placeholder="Your email">
+      </label>
+      <label for="email">Confirm Email
+        <input id="emailC" type="email" placeholder="Email">
+      </label>
+      <label for="pass">Password
+        <input id="pass" type="password" placeholder="Your password">
+      </label>
+      <label for="pass">Confirm Password
+        <input id="pass" type="password" placeholder="Password">
+      </label>
+      <div class="flex flex-row items-center justify-center">
+        <label class="flex flex-row justify-center items-center font-extralight gap-1 mt-5 text-xs sm:text-sm"
+          for="allow">
+          <input type="checkbox" name="allow" id="allow">Remember me
+        </label>
+      </div>
+      <button>Login</button>
+    </div>
   </div>
 </div>

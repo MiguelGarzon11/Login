@@ -14,15 +14,15 @@
   }
 
   nav {
-    @apply flex gap-5 sm:gap-10 text-lg sm:text-xl transition-all duration-500;
+    @apply flex gap-10 text-lg sm:text-xl transition-all duration-500;
   }
 
   #body {
-    @apply flex h-screen w-full justify-center items-start bg-blue-100 pt-16 cursor-default;
+    @apply flex h-[1000px] w-full justify-center items-start bg-blue-100 pt-16 cursor-default;
   }
 
   input {
-    @apply bg-gray-200 h-10 w-[250px] sm:h-12 sm:w-[300px] p-3 rounded-xl border-gray-300 border-[1px] caret-gray-500 text-gray-500 font-extralight text-[12px] sm:text-sm transition-all duration-500;
+    @apply bg-gray-200 h-10 w-[250px] sm:h-12 sm:w-[300px] p-3 rounded-xl border-gray-300 border-[1px] caret-gray-900 text-black font-extralight text-[12px] sm:text-sm transition-all duration-500 hover:border-2 hover:border-gray-600 focus:border-[1px] focus:border-gray-700 outline-none;
   }
 
   input[type="checkbox"] {
@@ -38,14 +38,18 @@
   }
 
   h1 {
-    @apply mb-5 text-3xl sm:text-4xl font-medium font-mono;
+    @apply mb-5 text-3xl sm:text-4xl font-medium font-mono transition-all duration-500 text-gray-500;
   }
 
   a {
-    @apply text-lg sm:text-xl md:text-2xl font-light;
+    @apply text-lg sm:text-xl md:text-2xl font-extralight font-mono hover:scale-105 transition-all duration-500;
   }
 
   button {
     @apply h-10 w-[200px] mb-5  sm:h-13 sm:w-[250px] text-sm sm:text-lg md:text-xl text-black bg-blue-300 rounded-xl cursor-pointer hover:scale-105 transition-all duration-300 hover:bg-blue-400 hover:text-white;
+  }
+
+  input::placeholder {
+    @apply text-gray-500;
   }
 }
