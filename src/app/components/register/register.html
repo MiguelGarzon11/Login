@@ -1,29 +1,26 @@
 <div id="body">
   <div class="h-[650px] w-[345px] sm:h-[765px] sm:w-[500px]" id="form">
     <h1>Register</h1>
-    <div class="relative flex flex-col justify-center items-center gap-3">
+    <form (ngSubmit)="register()" class="relative flex flex-col justify-center items-center gap-3">
       <label for="user">User
-        <input id="user" type="text" placeholder="Enter your name user">
+        <input id="user" type="text" [ngModel]="user" name="user" placeholder="Enter your name user"
+          autocomplete="username">
       </label>
       <label for="email">Email
-        <input id="email" type="email" placeholder="Your email">
+        <input id="email" type="email" [ngModel]="email" name="email" placeholder="Your email" autocomplete="email">
       </label>
-      <label for="email">Confirm Email
-        <input id="emailC" type="email" placeholder="Email">
+      <label for="cEmail">Confirm Email
+        <input id="cEmail" type="email" [ngModel]="cEmail" name="cEmail" placeholder="Email" autocomplete="email">
       </label>
       <label for="pass">Password
-        <input id="pass" type="password" placeholder="Your password">
+        <input id="pass" type="password" [ngModel]="password" name="password" placeholder="Your password"
+          autocomplete="new-password">
       </label>
-      <label for="pass">Confirm Password
-        <input id="pass" type="password" placeholder="Password">
+      <label for="cPass">Confirm Password
+        <input id="cPass" type="password" [ngModel]="cPassword" name="cPassword" placeholder="Password"
+          autocomplete="new-password">
       </label>
-      <div class="flex flex-row items-center justify-center">
-        <label class="flex flex-row justify-center items-center font-extralight gap-1 mt-5 text-xs sm:text-sm"
-          for="allow">
-          <input type="checkbox" name="allow" id="allow">Remember me
-        </label>
-      </div>
-      <button>Login</button>
-    </div>
+      <button type="submit">Login</button>
+    </form>
   </div>
 </div>

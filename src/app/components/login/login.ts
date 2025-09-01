@@ -12,4 +12,14 @@ import { FormsModule } from '@angular/forms';
 export class Login {
   email: string = '';
   password: string = '';
+
+  data() {
+    if (!this.email || !this.password) {
+      return alert("Ingrese todos los datos.")
+    }
+
+  }
+
+  remember: boolean = false;
+
 }
