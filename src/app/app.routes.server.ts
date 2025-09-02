@@ -8,5 +8,9 @@ export const serverRoutes: ServerRoute[] = [
   {
     path: 'register',
     renderMode: RenderMode.Server
+  },
+  {
+    path: 'dashboard',
+    renderMode: RenderMode.Server
   }
 ];
